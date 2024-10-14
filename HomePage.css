@@ -8,6 +8,7 @@
 .TopStyle {
   height: 100px;
   background-color: #ffffff;
+  margin-bottom: 50px;
 }
 
 .nav {
@@ -16,6 +17,8 @@
   align-items: center;
   height: 100%;
   padding: 0 20px 0 10px;
+  border-bottom: 1px solid #EDEAD0;
+
 }
 .logo {
   display: flex;
@@ -31,6 +34,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 .navbar-utility {
@@ -38,13 +42,13 @@
   margin:10px;
   text-decoration: none;
   font-size: 20px;
-  background-color: #ffffff; 
-  border-radius: 25px;
-
+  background-color: #A0E8AF; 
+  border-radius: 10px;
+  transition: 0.3s ;
 }
 
 .navbar-utility:hover{
-  background-color: #ffd2c7;
+  background-color: #A0E8AF;
 }
 
 .home-link {
@@ -61,6 +65,7 @@
   padding: 10px;
   border-radius: 20px;
   border: 2px solid #31150e;
+
 }
 .nav-search:hover {
   border: 2px solid #d0aa9c;
@@ -91,31 +96,7 @@
   font-size: 30px;
 }
 
-.header2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  background: white;
-  border-top: 0.9px solid #b5b0b0;
-  border-bottom: 0.9px solid rgb(179, 172, 172);
-  margin: 0.7px;
-}
 
-#slogan-font1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px 0 50px;
-  margin: 0;
-}
-#slogan-font2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 50px 0 50px;
-  margin: 0;
-}
 
 .showcase {
   width: 77%;
@@ -126,6 +107,7 @@
   align-items: center;
   padding: 30px 30px 0 30px;
   position: relative;
+ 
 }
 
 .rec1 {
@@ -151,55 +133,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
+  border: 0.7px solid #000000;
 }
 .recipe-redirect {
   bottom: 0px;
   position: absolute;
-  width: 100%;
-  height: 50px;
+  width: 60%;
+  height: 35px;
+  font-size: 10px;
   text-decoration: none;
   z-index: 2;
-  border: 2px solid #421f1f;
-  color: #e9e6e5;
+  color: #000000;
   font-size: 20px;
   text-align: center;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
+  background-color: #EDEAD0;
+  bottom: -25px;
+  transition: 0.3s ease;
 }
-.recipe-redirect::before {
-  content: " ";
-  position: absolute;
-  background-color: #2f1b17;
-  height: 100%;
-  bottom: 0;
-  left: 0;
-  opacity: 0.7;
-  z-index: -1;
-  width: 0%;
-  transition: 0.3s ease-in;
-}
-.recipe-redirect::after {
-  content: " ";
-  position: absolute;
-  height: 100%;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.1);
-  left: 0;
-  z-index: -2;
-  width: 100%;
-  transition: 0.3s ease-in;
+.recipe-redirect:hover{
+  background-color: #ffd1c0;
 }
 
-.recipe-redirect:hover::before {
-  width: 100%;
-  background-color: #6d1f00;
-}
+
 .section1 {
   width: 100%;
   height: 550px;
-  background-color: #ffffff;
+
 
   border-bottom: 1px solid #b5b0b0;
 }
@@ -211,6 +176,8 @@
   border-bottom: 1px solid #b5b0b0;
   width: 100%;
   height: 150px;
+  background: url(Homepageimg/patel.jpg);
+  background-size: cover;
 }
 .upload {
   display: flex;
@@ -242,24 +209,25 @@
 .trend-rew {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 100%;
   width: 100%;
   background: cover;
+}
+.acc-name{
+  padding-left: 5px;
 }
 .rew1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 25px;
   position: relative;
+  padding: 25px;
   height: 500px;
   width: 100%;
   background: url(Homepageimg/patel.jpg);
   background-size: cover;
   background-position: center;
-  padding: 25px;
-  margin: 25px 0 25px 0;
   border-radius: 30px;
   position: relative;
 }
@@ -355,18 +323,21 @@
   position: absolute;
   top: 35px;
   right: 35px;
-  height: 34px;
-  width: 34px;
-  border-radius: 17px;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
   background-color: #d0aa9c;
 }
 .section3 {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #b5b0b0;
+  margin-bottom: 100px;
+
 }
 
 .listing {
-  width: 50%;
+  width: 100%;
   height: max-content;
   margin: 80px 0 80px 0;
   padding: 50px 50px 130px 50px;
@@ -386,4 +357,84 @@
 .listing h1 {
   padding: 50px;
   font-size: 25px;
+}
+.right-part{
+  width:50%;
+}
+
+.top-contri{
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  margin: 50px;
+}
+
+.heading-contri{
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  z-index: 1;
+}
+.image-sliding{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  overflow-y: hidden;
+  border-bottom: 1px solid #EDEAD0;
+
+
+
+}
+.centered-page{
+  object-fit: fill;
+}
+.carousel {
+  margin: 0;
+  padding: 0;
+
+}
+
+.carousel-item img{
+  object-fit: cover;
+  height: 450px;
+  margin: auto;
+  width: 60%;
+  
+}
+.centered-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px; /* Adjust the padding as needed */
+  padding-bottom: 50px;
+}
+
+.carousel {
+  width: 100%; /* You can adjust the width as necessary */
+  max-width: 800px; /* Set a maximum width for the carousel */
+}
+.dropdown-menu{
+  background-color: #ffd5c6;
+}
+
+.container-fluid{
+  display: flex;
+  justify-content: center;
+}
+
+.nav a{
+  color: #000000;
+}
+
+.nav-button{
+  background-color: #A0E8AF;
+  color: black;
+  border:0px;
+  border-radius: 50%;
 }
