@@ -19,7 +19,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Recipefied</title>
     <link rel="stylesheet" href="HomePage.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
@@ -29,43 +29,50 @@
     <header class="TopStyle">
       <nav class="nav">
         <div class="logo">
-          <img src="Homepageimg/logo.png" class="logo" />
-          <a class="logo-text" href="HomePage.html">Recipefied</a>
+          <img src="images/logo.png" class="logo" />
         </div>
-        <div class="navbar">
+        
           <a href="HomePage.html" class="navbar-utility home-link">Home</a>
           <a href="#" class="navbar-utility">Popular</a>
           <a href="#" class="navbar-utility">Categories</a>
           <a href="#" class="navbar-utility">About Us</a>
-        </div>
+        
         <div class="dropdown">
           <button class="btn btn-secondary dropdown-toggle nav-button" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
           </button>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">ACCOUNT</a></li>
-            <li><a class="dropdown-item" href="#">SETTINGS</a></li>
-            <li><a class="dropdown-item" href="#">UPLOAD/EDIT</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Help</a></li>
           </ul>
         </div>
       </nav>
       
+        <div class="headingline">
+          <h1>From Our Kitchen to Yours: Explore the Art of Cooking!</h1>
+
+        </div>
     </header>
-    <div class="container-fluid py5">
+    <div class="container-fluid py5 carouseldiv">
       <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="Homepageimg/taylor.jpg" class="d-block w-100" alt="...">
+            <img src="images/taylor.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="Homepageimg/patel.jpg" class="d-block w-100" alt="...">
+            <img src="images/patel.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="Homepageimg/Street.jpg" class="d-block w-100" alt="...">
+            <img src="images/Street.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
       </div>
   </div>
+
+  <div class="headline2" style="text-align: center; margin-top: 3rem;">  <h1>A World Of Taste, Just A Click Away!</h1>
+  </div>
     <div class="section1">
+      
       <div class="showcase">
         <div class="item rec1">
           <a class="recipe-redirect">Regional</a>
@@ -81,125 +88,70 @@
         </div>
       </div>
     </div>
-    <div class="section-upload">
-      <div class="upload">
-        <a href="#" class="uploading">Start Uploading</a>
-        <a href="#" class="uploading">Start Browsing</a>
-      </div>
-    </div>
-    <div class="section3">
-      <div class="trends">
-        <p id="trendingchoice">Trending Choices</p>
-        <div class="trend-rew">
-          <div class="rew1">
-            <div class="rew-image">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <p class="acc-name">Sushant Patel</p>
-            </div>
-            <div class="fav-icon">
-              <span class="material-symbols-outlined"> favorite </span>
-            </div>
-            <div class="rew-text">
-              <p class="rew-p">Check out Patel's signature Curry</p>
-              <a class="rew-button">Check Out</a>
-            </div>
+    
+
+    
+          <div class="section3">
+            <div class="trends">
+              <h2 id="trendingchoice">Trending Choices</h2>
+              <div class="trend-rew">
+                <div class="rew1">
+                  <div class="rew-image">
+                    <span class="material-symbols-outlined"> account_circle </span>
+                    <p class="acc-name">Sushant Patel</p>
+                  </div>
+                  <div class="fav-icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="rew-text">
+                    <p class="rew-p">Check out Sushant's signature Curry</p>
+                    <a class="rew-button">Check Out</a>
+                  </div>
+                </div>
+                <div class="rew2">
+                  <div class="rew-image">
+                    <span class="material-symbols-outlined"> account_circle </span>
+                    <p class="acc-name">Ahmed Ansari</p>
+                  </div>
+                  <div class="fav-icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="rew-text">
+                    <p class="rew-p">Check out Ahmed's signature Curry</p>
+                    <a class="rew-button">Check Out</a>
+                  </div>
+                </div>
+                <div class="rew3">
+                  <div class="rew-image">
+                    <span class="material-symbols-outlined"> account_circle </span>
+                    <p class="acc-name">Taylor Swift</p>
+                  </div>
+                  <div class="fav-icon">
+                    <span class="material-symbols-outlined"> favorite </span>
+                  </div>
+                  <div class="rew-text">
+                    <p class="rew-p">Check out Taylor's signature Curry</p>
+                    <a class="rew-button">Check Out</a>
+                  </div>
+                </div>
+
+
+                <div class="top-contri">
+                  <h2>TOp Contributors
+                    
+                  </h2>
+                </div>
           </div>
-          <div class="rew2">
-            <div class="rew-image">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <p class="acc-name">Ahmed Ansari</p>
             </div>
-            <div class="fav-icon">
-              <span class="material-symbols-outlined"> favorite </span>
-            </div>
-            <div class="rew-text">
-              <p class="rew-p">Check out Patel's signature Curry</p>
-              <a class="rew-button">Check Out</a>
-            </div>
-          </div>
-          <div class="rew3">
-            <div class="rew-image">
-              <span class="material-symbols-outlined"> account_circle </span>
-              <p class="acc-name">Taylor Swift</p>
-            </div>
-            <div class="fav-icon">
-              <span class="material-symbols-outlined"> favorite </span>
-            </div>
-            <div class="rew-text">
-              <p class="rew-p">Check out Patel's signature Curry</p>
-              <a class="rew-button">Check Out</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="right-part">
-        <div class="listing">
-          <div class="text-listing">
-            <h1>Find The perfect recipes for you</h1>
-          </div>
-          <ul class="list-group">
-            <li class="list-group-item">Categories to explore</li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-            <li class="list-group-item"><a href="#">An item</a></li>
-          </ul>
-        </div>
-        <div class="top-contri">
-          <div class="heading-contri">
-            <h1>Top Contributors</h1>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem">
-            <img src="..." class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      
+
+
+        
+
+
 
   </body>
 </html>
