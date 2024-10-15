@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Recipe</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Your Recipe</h1>
+        <form id="recipeForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="recipeName">Recipe Name:</label>
+                <input type="text" id="recipeName" name="recipeName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="recipeDescription">Description:</label>
+                <textarea id="recipeDescription" name="recipeDescription" rows="3" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="recipeImage">Recipe Image:</label>
+                <input type="file" id="recipeImage" name="recipeImage" accept="image/*" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" rows="4" placeholder="List ingredients here" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" rows="6" placeholder="Step-by-step instructions" required></textarea>
+            </div>
+
+            <button type="submit" id="submitBtn">Upload Recipe</button>
+        </form>
+
+        <div id="preview" class="preview-section">
+            <h2>Recipe Preview</h2>
+            <p id="previewName"></p>
+            <p id="previewDescription"></p>
+            <img id="previewImage" src="" alt="Recipe Image Preview" style="display: none;">
+            <h3>Ingredients:</h3>
+            <p id="previewIngredients"></p>
+            <h3>Instructions:</h3>
+            <p id="previewInstructions"></p>
+        </div>
+    </div>
+
+    <script src="upload.js"></script>
+</body>
+</html>
